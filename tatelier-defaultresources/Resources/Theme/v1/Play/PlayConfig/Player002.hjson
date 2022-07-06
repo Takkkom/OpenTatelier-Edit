@@ -1,0 +1,371 @@
+{
+    Elements : [
+    	{
+            // キー設定
+    		Name: "KeyConfig",
+    		Players: [
+    			{
+					Number: 1,
+					Play: {
+						LeftKat: ["D"],
+						LeftDon: ["F"],
+						RightDon: ["J"],
+						RightKat: ["K"],						
+					}
+    			},
+    			{
+					Number: 2,
+					Play: {
+						LeftKat: ["C"],
+						LeftDon: ["V"],
+						RightDon: ["M"],
+						RightKat: ["<"],						
+					}
+    			},
+    		]
+    	},
+    	{
+    		Name: "SoundEffect",
+    		Don: "../Sound/{{ SoundEffect.Name }}/Don.wav",
+    		Kat: "../Sound/{{ SoundEffect.Name }}/Kat.wav",
+    		Balloon: "../Sound/{{ SoundEffect.Name }}/Balloon.wav",
+    		Miss: "../Sound/Default/Miss.wav"
+    	},
+        {
+            // 上背景
+            Name: "Background::Upper",
+            Player: 1,
+			Rect: {
+				X: 0,
+				Y: 0,
+				Width: 1920,
+				Height: 288,
+			},
+        },
+        {
+            // 上背景
+            Name: "Background::Upper",
+            Player: 2,
+			Rect: {
+				X: 0,
+				Y: 792,
+				Width: 1920,
+				Height: 288,
+			},
+		},
+        {
+            Name: "Other",
+            Elements: [
+                {
+                    Image: {
+                        FilePath: "OtherImage/Other002.png",
+                        PointX: 0,
+                        PointY: 0
+                    }
+                }
+            ]
+        },
+        {
+            Name: "Taiko",
+            Player: 1,
+            PointX: 370,
+            PointY: 410
+        },
+        {
+            Name: "ComboNumber",
+            Player: 1,
+            FolderPath: "ComboNumber/Red",
+            PointX: 365, 
+            PointY: 340,
+            Chip: {
+                Width: 47,
+            },
+            Animation: {
+            	DuringTime: 200,
+            	StartExRateY: 1.1,
+            }
+        },
+        {
+            Name: "Taiko",
+            Player: 2,
+            PointX: 370,
+            PointY: 670
+        },
+        {
+            Name: "ComboNumber",
+            Player: 2,
+            FolderPath: "ComboNumber/Blue",
+            PointX: 365, 
+            PointY: 600,
+            Chip: {
+                Width: 47,
+            },
+            Animation: {
+            	DuringTime: 200,
+            	StartExRateY: 1.1,
+            }
+        },
+        {
+            Name: "NoteField",
+            Player: 1,
+            PointX: 498,
+            PointY: 288,
+            Width: 1422,
+            Height: 196,
+            JudgeRelativePointCX: 120,
+            JudgeRelativePointCY: 98,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 1,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "NoteField/JudgeFrame.png"
+            Player: 1,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 1,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 1,
+        },
+        {
+            Name: "Note::Hit",
+            Player: 1,
+        },
+        {
+            Name: "Measure",
+            Player: 1,
+        },
+        {
+            Name: "Note",
+            Player: 1,
+            FolderPath: "Note",
+        },
+        {
+            Name: "Other",
+            Elements: [
+                {
+                    Image: {
+                        FilePath: "OtherImage/魂.png",
+                        PointX: 1796,
+                        PointY: 206,
+                        Pivot: "Center",
+                    }
+                }
+            ]
+        },
+        {
+            Name: "SoulGauge",
+            Player: 1,
+            FolderPath: "SoulGauge/Red",
+            PointX: 730,
+            PointY: 216
+        },
+        {
+            Name: "JudgeText",
+            Player: 1,
+            FolderPath: "Judge",
+            PointX: 616,
+            PointY: 298
+        },
+        {
+            Name: "NoteFlyEffect",
+            Player: 1,
+            Start: {
+                PointX: 618,
+                PointY: 384,
+            },
+            Middle: {
+                PointX: 1226,
+                PointY: 0
+            },
+            End: {
+                PointX: 1834,
+                PointY: 244
+            }
+        },
+        {
+            Name: "Chara",
+            Player: 1,
+            PointX: 60,
+            PointY: 78,
+            Normal: {
+            	Type: "apng",
+            	FilePath: "../Chara/Pink/pink-parrot.png",
+            },
+            Soul: {
+            	Type: "apng",
+            	FilePath: "../Chara/Rainbow/rainbow-parrot.png",
+            },
+        },
+        {
+            Name: "Chara",
+            Player: 2,
+            PointX: 60,
+            PointY: 870,
+            Normal: {
+            	Type: "apng",
+            	FilePath: "../Chara/Sky/sky-parrot.png",
+            },
+            Soul: {
+            	Type: "apng",
+            	FilePath: "../Chara/Rainbow/rainbow-parrot.png",
+            },
+        },
+        {
+            Name: "NoteField",
+            Player: 2,
+            PointX: 498,
+            PointY: 552,
+            Width: 1422,
+            Height: 196,
+            JudgeRelativePointCX: 120,
+            JudgeRelativePointCY: 98,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 2,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "NoteField/JudgeFrame.png"
+            Player: 2,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 2,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 2,
+        },
+        {
+            Name: "Note::Hit",
+            Player: 2,
+        },
+        {
+            Name: "Measure",
+            Player: 2,
+        },
+        {
+            Name: "Note",
+            Player: 2,
+            FolderPath: "Note",
+        },
+        {
+            Name: "Other",
+            Elements: [
+                {
+                    Image: {
+                        FilePath: "OtherImage/魂.png",
+                        PointX: 1796,
+                        PointY: 804,
+                        Pivot: "Center",
+                    }
+                }
+            ]
+        },
+        {
+            Name: "SoulGauge",
+            Player: 2,
+            FolderPath: "SoulGauge/BlueLower",
+            PointX: 730,
+            PointY: 792
+        },
+        {
+            Name: "JudgeText",
+            Player: 2,
+            FolderPath: "Judge",
+            PointX: 616,
+            PointY: 560
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 1,
+        	X: 218,
+        	Y: 321,
+            FolderPath: "ScoreNumber",
+            Chip: {
+                Width: 30,
+                Height: 60,
+            }
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 2,
+        	X: 218,
+        	Y: 761,
+            FolderPath: "ScoreNumber",
+            Chip: {
+                Width: 30,
+                Height: 60,
+            }
+        },
+        {
+            Name: "NoteFlyEffect",
+            Player: 2,
+            Start: {
+                PointX: 618,
+                PointY: 652,
+            },
+            Middle: {
+                PointX: 1226,
+                PointY: 1080
+            },
+            End: {
+                PointX: 1834,
+                PointY: 836
+            }
+        },
+        {
+            Name: "RollNumber",
+            Player: 1,
+            X: 430,
+            Y: 150,
+        },
+        {
+            Name: "BalloonNumber",
+            Player: 1,
+            X: 430,
+            Y: 150,
+        },
+        {
+            Name: "RollNumber",
+            Player: 2,
+            X: 430,
+            Y: 850,
+        },
+        {
+            Name: "BalloonNumber",
+            Player: 2,
+            X: 430,
+            Y: 850,
+        },
+        {
+        	Name: "Title",
+        	FontSize: 56,
+        	Pivot: "RightMiddle",
+        	PointX: 1870,
+        	PointY: 103,
+        },
+        {
+        	Name: "Lyric",
+        	Pivot: "Center"
+        	Font: {
+        		Name: "UD デジタル 教科書体 NK-B",
+        		Size: 40,
+        		Color: "0xF0F0F0",
+        		Edge: {
+        			Size: 12,
+        			Color: "0x303843",
+        		}
+        	}
+        	PointCX: 960,
+        	PointCY: 1020,
+        }
+    ],
+}

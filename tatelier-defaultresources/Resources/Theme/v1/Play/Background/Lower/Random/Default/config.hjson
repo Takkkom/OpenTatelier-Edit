@@ -1,0 +1,22 @@
+{
+	Elements: [
+		{
+			Type: "Image",
+			State: ["Normal", "Clear"],
+			FilePath: "Back.png",
+			Tile: 1,
+		},
+		{
+			Type: "Image",
+			State: ["Normal", "Clear"],
+			FilePath: "Honeycomb.png",
+			Components: [
+				{
+					Type: "Scroll",
+					X: 90,
+				}
+			],
+			Tile: 1,
+		}
+	],
+}

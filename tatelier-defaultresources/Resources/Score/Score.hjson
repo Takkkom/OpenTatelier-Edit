@@ -1,0 +1,87 @@
+// 譜面読み込みの設定ファイルです。
+// 譜面はRootフォルダに入れてください
+{
+	// 選曲画面の選曲一覧で利用する画像のフォルダを指定します。
+	SongSelectImageRootFolder: "SongSelect/Genres",
+	
+	// 選曲画面が利用するジャンルを定義します。
+    Genres: [
+        {
+        	// ジャンル名
+            Name: "ポップ",
+            
+            // ジャンル詳細説明
+            Detail:
+            '''
+            ポップ楽曲の譜面です。
+            全{{ScoreCount}}曲!!
+            '''
+            // 曖昧ジャンル名
+            // 表記ゆれが起きているジャンルをこのジャンルとして扱います。
+            Ambiguous: [
+                "J-POP",
+                "ぽっぷ",
+                "pop",
+            ],
+            // SongSelectImageRootFolderで指定したフォルダ内で各ジャンルが利用する
+            // 画像フォルダパスを指定します。(相対パス)
+			ImageFolder: "ポップス"
+        },
+        {
+            Name: "ゲーム＆バラエティ",
+            Detail:
+            '''
+            ゲームやバラエティで使われている楽曲の譜面です。
+            全{{ScoreCount}}曲!!
+            '''
+            # Ambiguos … 曖昧という意味
+            Ambiguous: [
+                "ゲーム",
+                "ゲームミュージック",
+                "バラエティ",
+                "Game",
+                "GAME",
+            ],
+			ImageFolder: "ゲーム＆バラエティ"
+        },
+        {
+            Name: "ボーカロイド",
+            Detail:
+            '''
+            ボーカロイド楽曲の譜面です。
+            全{{ScoreCount}}曲!!
+            '''
+            # Ambiguos … 曖昧という意味
+            Ambiguous: [
+                "vocaloid"
+                "ボカロ",
+            ],
+			ImageFolder: "ボーカロイド"
+        },
+        {
+            Name: "どうよう",
+            Detail:
+            '''
+            どうよう楽曲の譜面です。
+            全{{ScoreCount}}曲!!
+            '''
+            # Ambiguos … 曖昧という意味
+            Ambiguous: [
+            ],
+			ImageFolder: "どうよう"
+        },
+        {
+            Name: "アニメ",
+            Detail:
+            '''
+            アニメ楽曲の譜面です。
+            全{{ScoreCount}}曲!!
+            '''
+            # Ambiguos … 曖昧という意味
+            Ambiguous: [
+                "Anime"
+            ],
+			ImageFolder: "アニメ"
+        },
+    ]
+}

@@ -1,0 +1,34 @@
+{
+	Elements: [
+		{
+			Type: "Image",
+			FilePath: "Back.png",
+		},
+		{
+			Type: "Image",
+			FilePath: "Tomoe.png",
+			Components: [
+				{
+					Type: "Scroll",
+					X: 30,
+				}
+			],
+			Tile: 1,
+		},
+		{
+			Type: "Image",
+			FilePath: "Cloud.png",
+			Components: [
+				{
+					Type: "Scroll",
+					X: -15,
+				}
+			],
+			Tile: 1,
+		},
+		{
+			Type: "Image",
+			FilePath: "Castle.png",
+		},
+	],
+}

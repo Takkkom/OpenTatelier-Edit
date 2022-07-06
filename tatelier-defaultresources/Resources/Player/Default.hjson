@@ -1,0 +1,9 @@
+{
+	// 名前
+	Name: "Default",
+	Play: {
+		SoundEffect: {
+			Name: "Drum"
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	Elements: [
+		{
+			Type: "Image",
+			State: ["Normal"],
+			FilePath: "Default_{{ PlayerNumber }}.png",
+			Components: [
+				{
+					Type: "Scroll",
+					X: -90,
+				}
+			],
+			Tile: 1,
+		},
+		{
+			Type: "Image",
+			State: ["Clear"],
+			FilePath: "Clear.png",
+			Components: [
+				{
+					Type: "Scroll",
+					X: -90,
+				}
+			],
+			Tile: 1,
+		},
+	],
+}

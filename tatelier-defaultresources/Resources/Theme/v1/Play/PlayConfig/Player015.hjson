@@ -1,0 +1,1321 @@
+{
+    Elements : [
+    	{
+    		Name: "KeyConfig",
+    		Players: [
+    			{
+					Number: 1,
+					Play: {
+						LeftKat: ["D"],
+						LeftDon: ["F"],
+						RightDon: ["J"],
+						RightKat: ["K"],						
+					}
+    			},
+    			{
+					Number: 2,
+					Play: {
+						LeftKat: ["C"],
+						LeftDon: ["V"],
+						RightDon: ["M"],
+						RightKat: ["<"],						
+					}
+    			},
+    			{
+					Number: 3,
+					Play: {
+						LeftKat: ["1"],
+						LeftDon: ["2"],
+						RightDon: ["3"],
+						RightKat: ["4"],						
+					}
+    			},
+    			{
+					Number: 4,
+					Play: {
+						LeftKat: ["5"],
+						LeftDon: ["6"],
+						RightDon: ["7"],
+						RightKat: ["8"],						
+					}
+    			},
+    			{
+					Number: 4,
+					Play: {
+						LeftKat: ["9"],
+						LeftDon: ["0"],
+						RightDon: ["-"],
+						RightKat: ["^"],						
+					}
+    			},
+    			{
+					Number: 5,
+					Play: {
+						LeftKat: ["Q"],
+						LeftDon: ["W"],
+						RightDon: ["E"],
+						RightKat: ["R"],						
+					}
+    			},
+    			{
+					Number: 6,
+					Play: {
+						LeftKat: ["Y"],
+						LeftDon: ["U"],
+						RightDon: ["I"],
+						RightKat: ["O"],						
+					}
+    			},
+    			{
+					Number: 7,
+					Play: {
+						LeftKat: ["P"],
+						LeftDon: ["@"],
+						RightDon: ["["],
+						RightKat: ["YEN"],						
+					}
+    			},
+    			{
+					Number: 8,
+					Play: {
+						LeftKat: ["A"],
+						LeftDon: ["S"],
+						RightDon: ["G"],
+						RightKat: ["H"],						
+					}
+    			},
+    			{
+					Number: 9,
+					Play: {
+						LeftKat: ["L"],
+						LeftDon: ["+"],
+						RightDon: ["*"],
+						RightKat: ["]"],						
+					}
+    			},
+    			{
+					Number: 10,
+					Play: {
+						LeftKat: ["Z"],
+						LeftDon: ["X"],
+						RightDon: ["B"],
+						RightKat: ["N"],						
+					}
+    			},
+    			{
+					Number: 11,
+					Play: {
+						LeftKat: ["."],
+						LeftDon: ["Enter"],
+						RightDon: ["\\"],
+						RightKat: ["RShift"],						
+					}
+    			},
+    			{
+					Number: 12,
+					Play: {
+						LeftKat: ["Up"],
+						LeftDon: ["Right"],
+						RightDon: ["Down"],
+						RightKat: ["Left"],						
+					}
+    			},
+    			{
+					Number: 13,
+					Play: {
+						LeftKat: ["NUMPAD1"],
+						LeftDon: ["NUMPAD2"],
+						RightDon: ["NUMPAD3"],
+						RightKat: ["NUMPAD4"],					
+					}
+    			},
+    			{
+					Number: 14,
+					Play: {
+						LeftKat: ["NUMPAD5"],
+						LeftDon: ["NUMPAD6"],
+						RightDon: ["NUMPAD7"],
+						RightKat: ["NUMPAD8"],					
+					}
+    			},
+    			{
+					Number: 15,
+					Play: {
+						LeftKat: ["NUMPAD9"],
+						LeftDon: ["NUMPAD0"],
+						RightDon: ["DELETE"],
+						RightKat: ["BACK"],						
+					}
+    			},
+    		]
+    	},
+    	{
+    		Name: "SoundEffect",
+    		Don: "../Sound/{{ SoundEffect.Name }}/Don.wav",
+    		Kat: "../Sound/{{ SoundEffect.Name }}/Kat.wav",
+    		Balloon: "../Sound/{{ SoundEffect.Name }}/Balloon.wav",
+    		Miss: "../Sound/Default/Miss.wav"
+    	},
+        {
+            Name: "NoteField",
+            FolderPath: "Extensions/Player015/Other/NoteField/",
+            Player: 2,
+            PointX: 249,
+            PointY: 0,
+            Width: 711,
+            Height: 98,
+            JudgeRelativePointCX: 60,
+            JudgeRelativePointCY: 49,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 2,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "Extensions/Player015/Other/NoteField/JudgeFrame.png"
+            Player: 2,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 2,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 2,
+        },
+        {
+            Name: "Note::Hit",
+            FolderPath: "Extensions/Player015/Other/Hit"
+            Player: 2,
+        },
+        {
+            Name: "Measure",
+            Player: 2,
+        },
+        {
+            Name: "Note",
+            Player: 2,
+            FolderPath: "Extensions/Player015/Other/Note/",
+        },
+        {
+            Name: "SoulGauge",
+            Player: 2,
+            FolderPath: "Extensions/Player015/Other/SoulGauge",
+            PointX: 705,
+            PointY: 4
+        },
+        {
+            Name: "NoteField",
+            FolderPath: "Extensions/Player015/Other/NoteField/",
+            Player: 3,
+            PointX: 1209,
+            PointY: 0,
+            Width: 711,
+            Height: 98
+            JudgeRelativePointCX: 60,
+            JudgeRelativePointCY: 49,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 3,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "Extensions/Player015/Other/NoteField/JudgeFrame.png"
+            Player: 3,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 3,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 3,
+        },
+        {
+            Name: "Note::Hit",
+            FolderPath: "Extensions/Player015/Other/Hit"
+            Player: 3,
+        },
+        {
+            Name: "Measure",
+            Player: 3,
+        },
+        {
+            Name: "Note",
+            Player: 3,
+            FolderPath: "Extensions/Player015/Other/Note/",
+        },
+        {
+            Name: "SoulGauge",
+            Player: 3,
+            FolderPath: "Extensions/Player015/Other/SoulGauge",
+            PointX: 1665,
+            PointY: 4
+        },
+        {
+            Name: "NoteField",
+            FolderPath: "Extensions/Player015/Other/NoteField/",
+            Player: 4,
+            PointX: 249,
+            PointY: 120,
+            Width: 711,
+            Height: 98
+            JudgeRelativePointCX: 60,
+            JudgeRelativePointCY: 49,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 4,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "Extensions/Player015/Other/NoteField/JudgeFrame.png"
+            Player: 4,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 4,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 4,
+        },
+        {
+            Name: "Note::Hit",
+            FolderPath: "Extensions/Player015/Other/Hit"
+            Player: 4,
+        },
+        {
+            Name: "Measure",
+            Player: 4,
+        },
+        {
+            Name: "Note",
+            Player: 4,
+            FolderPath: "Extensions/Player015/Other/Note/",
+        },
+        {
+            Name: "SoulGauge",
+            Player: 4,
+            FolderPath: "Extensions/Player015/Other/SoulGauge",
+            PointX: 705,
+            PointY: 124
+        },
+        {
+            Name: "NoteField",
+            FolderPath: "Extensions/Player015/Other/NoteField/",
+            Player: 5,
+            PointX: 1209,
+            PointY: 120
+            Width: 711,
+            Height: 98
+            JudgeRelativePointCX: 60,
+            JudgeRelativePointCY: 49,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 5,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "Extensions/Player015/Other/NoteField/JudgeFrame.png"
+            Player: 5,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 5,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 5,
+        },
+        {
+            Name: "Note::Hit",
+            FolderPath: "Extensions/Player015/Other/Hit"
+            Player: 5,
+        },
+        {
+            Name: "Measure",
+            Player: 5,
+        },
+        {
+            Name: "Note",
+            Player: 5,
+            FolderPath: "Extensions/Player015/Other/Note/",
+        },
+        {
+            Name: "SoulGauge",
+            Player: 5,
+            FolderPath: "Extensions/Player015/Other/SoulGauge",
+            PointX: 1665,
+            PointY: 124
+        },
+        {
+            Name: "NoteField",
+            FolderPath: "Extensions/Player015/Other/NoteField/",
+            Player: 6,
+            PointX: 249,
+            PointY: 480,
+            Width: 711,
+            Height: 98
+            JudgeRelativePointCX: 60,
+            JudgeRelativePointCY: 49,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 6,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "Extensions/Player015/Other/NoteField/JudgeFrame.png"
+            Player: 6,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 6,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 6,
+        },
+        {
+            Name: "Note::Hit",
+            FolderPath: "Extensions/Player015/Other/Hit"
+            Player: 6,
+        },
+        {
+            Name: "Measure",
+            Player: 6,
+        },
+        {
+            Name: "Note",
+            Player: 6,
+            FolderPath: "Extensions/Player015/Other/Note/",
+        },
+        {
+            Name: "SoulGauge",
+            Player: 6,
+            FolderPath: "Extensions/Player015/Other/SoulGauge",
+            PointX: 705,
+            PointY: 484
+        },
+        {
+            Name: "NoteField",
+            FolderPath: "Extensions/Player015/Other/NoteField/",
+            Player: 7,
+            PointX: 1209,
+            PointY: 480
+            Width: 711,
+            Height: 98
+            JudgeRelativePointCX: 60,
+            JudgeRelativePointCY: 49,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 7,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "Extensions/Player015/Other/NoteField/JudgeFrame.png"
+            Player: 7,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 7,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 7,
+        },
+        {
+            Name: "Note::Hit",
+            FolderPath: "Extensions/Player015/Other/Hit"
+            Player: 7,
+        },
+        {
+            Name: "Measure",
+            Player: 7,
+        },
+        {
+            Name: "Note",
+            Player: 7,
+            FolderPath: "Extensions/Player015/Other/Note/",
+        },
+        {
+            Name: "SoulGauge",
+            Player: 7,
+            FolderPath: "Extensions/Player015/Other/SoulGauge",
+            PointX: 1665,
+            PointY: 484
+        },
+        {
+            Name: "NoteField",
+            FolderPath: "Extensions/Player015/Other/NoteField/",
+            Player: 8,
+            PointX: 249,
+            PointY: 600,
+            Width: 711,
+            Height: 98
+            JudgeRelativePointCX: 60,
+            JudgeRelativePointCY: 49,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 8,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "Extensions/Player015/Other/NoteField/JudgeFrame.png"
+            Player: 8,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 8,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 8,
+        },
+        {
+            Name: "Note::Hit",
+            FolderPath: "Extensions/Player015/Other/Hit"
+            Player: 8,
+        },
+        {
+            Name: "Measure",
+            Player: 8,
+        },
+        {
+            Name: "Note",
+            Player: 8,
+            FolderPath: "Extensions/Player015/Other/Note/",
+        },
+        {
+            Name: "SoulGauge",
+            Player: 8,
+            FolderPath: "Extensions/Player015/Other/SoulGauge",
+            PointX: 705,
+            PointY: 604
+        },
+        {
+            Name: "NoteField",
+            FolderPath: "Extensions/Player015/Other/NoteField/",
+            Player: 9,
+            PointX: 1209,
+            PointY: 600
+            Width: 711,
+            Height: 98
+            JudgeRelativePointCX: 60,
+            JudgeRelativePointCY: 49,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 9,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "Extensions/Player015/Other/NoteField/JudgeFrame.png"
+            Player: 9,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 9,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 9,
+        },
+        {
+            Name: "Note::Hit",
+            FolderPath: "Extensions/Player015/Other/Hit"
+            Player: 9,
+        },
+        {
+            Name: "Measure",
+            Player: 9,
+        },
+        {
+            Name: "Note",
+            Player: 9,
+            FolderPath: "Extensions/Player015/Other/Note/",
+        },
+        {
+            Name: "SoulGauge",
+            Player: 9,
+            FolderPath: "Extensions/Player015/Other/SoulGauge",
+            PointX: 1665,
+            PointY: 604
+        },
+        {
+            Name: "NoteField",
+            FolderPath: "Extensions/Player015/Other/NoteField/",
+            Player: 10,
+            PointX: 249,
+            PointY: 720,
+            Width: 711,
+            Height: 98
+            JudgeRelativePointCX: 60,
+            JudgeRelativePointCY: 49,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 10,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "Extensions/Player015/Other/NoteField/JudgeFrame.png"
+            Player: 10,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 10,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 10,
+        },
+        {
+            Name: "Note::Hit",
+            FolderPath: "Extensions/Player015/Other/Hit"
+            Player: 10,
+        },
+        {
+            Name: "Measure",
+            Player: 10,
+        },
+        {
+            Name: "Note",
+            Player: 10,
+            FolderPath: "Extensions/Player015/Other/Note/",
+        },
+        {
+            Name: "SoulGauge",
+            Player: 10,
+            FolderPath: "Extensions/Player015/Other/SoulGauge",
+            PointX: 705,
+            PointY: 724
+        },
+        {
+            Name: "NoteField",
+            FolderPath: "Extensions/Player015/Other/NoteField/",
+            Player: 11,
+            PointX: 1209,
+            PointY: 720
+            Width: 711,
+            Height: 98
+            JudgeRelativePointCX: 60,
+            JudgeRelativePointCY: 49,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 11,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "Extensions/Player015/Other/NoteField/JudgeFrame.png"
+            Player: 11,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 11,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 11,
+        },
+        {
+            Name: "Note::Hit",
+            FolderPath: "Extensions/Player015/Other/Hit"
+            Player: 11,
+        },
+        {
+            Name: "Measure",
+            Player: 11,
+        },
+        {
+            Name: "Note",
+            Player: 11,
+            FolderPath: "Extensions/Player015/Other/Note/",
+        },
+        {
+            Name: "SoulGauge",
+            Player: 11,
+            FolderPath: "Extensions/Player015/Other/SoulGauge",
+            PointX: 1665,
+            PointY: 724
+        },
+        {
+            Name: "NoteField",
+            FolderPath: "Extensions/Player015/Other/NoteField/",
+            Player: 12,
+            PointX: 249,
+            PointY: 840,
+            Width: 711,
+            Height: 98
+            JudgeRelativePointCX: 60,
+            JudgeRelativePointCY: 49,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 12,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "Extensions/Player015/Other/NoteField/JudgeFrame.png"
+            Player: 12,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 12,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 12,
+        },
+        {
+            Name: "Note::Hit",
+            FolderPath: "Extensions/Player015/Other/Hit"
+            Player: 12,
+        },
+        {
+            Name: "Measure",
+            Player: 12,
+        },
+        {
+            Name: "Note",
+            Player: 12,
+            FolderPath: "Extensions/Player015/Other/Note/",
+        },
+        {
+            Name: "SoulGauge",
+            Player: 12,
+            FolderPath: "Extensions/Player015/Other/SoulGauge",
+            PointX: 705,
+            PointY: 844
+        },
+        {
+            Name: "NoteField",
+            FolderPath: "Extensions/Player015/Other/NoteField/",
+            Player: 13,
+            PointX: 1209,
+            PointY: 840
+            Width: 711,
+            Height: 98
+            JudgeRelativePointCX: 60,
+            JudgeRelativePointCY: 49,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 13,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "Extensions/Player015/Other/NoteField/JudgeFrame.png"
+            Player: 13,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 13,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 13,
+        },
+        {
+            Name: "Note::Hit",
+            FolderPath: "Extensions/Player015/Other/Hit"
+            Player: 13,
+        },
+        {
+            Name: "Measure",
+            Player: 13,
+        },
+        {
+            Name: "Note",
+            Player: 13,
+            FolderPath: "Extensions/Player015/Other/Note/",
+        },
+        {
+            Name: "SoulGauge",
+            Player: 13,
+            FolderPath: "Extensions/Player015/Other/SoulGauge",
+            PointX: 1665,
+            PointY: 844
+        },
+        {
+            Name: "NoteField",
+            FolderPath: "Extensions/Player015/Other/NoteField/",
+            Player: 14,
+            PointX: 249,
+            PointY: 960,
+            Width: 711,
+            Height: 98
+            JudgeRelativePointCX: 60,
+            JudgeRelativePointCY: 49,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 14,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "Extensions/Player015/Other/NoteField/JudgeFrame.png"
+            Player: 14,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 14,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 14,
+        },
+        {
+            Name: "Note::Hit",
+            FolderPath: "Extensions/Player015/Other/Hit"
+            Player: 14,
+        },
+        {
+            Name: "Measure",
+            Player: 14,
+        },
+        {
+            Name: "Note",
+            Player: 14,
+            FolderPath: "Extensions/Player015/Other/Note/",
+        },
+        {
+            Name: "SoulGauge",
+            Player: 14,
+            FolderPath: "Extensions/Player015/Other/SoulGauge",
+            PointX: 705,
+            PointY: 964
+        },
+        {
+            Name: "NoteField",
+            FolderPath: "Extensions/Player015/Other/NoteField/",
+            Player: 15,
+            PointX: 1209,
+            PointY: 960
+            Width: 711,
+            Height: 98
+            JudgeRelativePointCX: 60,
+            JudgeRelativePointCY: 49,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 15,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "Extensions/Player015/Other/NoteField/JudgeFrame.png"
+            Player: 15,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 15,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 15,
+        },
+        {
+            Name: "Note::Hit",
+            FolderPath: "Extensions/Player015/Other/Hit"
+            Player: 15,
+        },
+        {
+            Name: "Measure",
+            Player: 15,
+        },
+        {
+            Name: "Note",
+            Player: 15,
+            FolderPath: "Extensions/Player015/Other/Note/",
+        },
+        {
+            Name: "SoulGauge",
+            Player: 15,
+            FolderPath: "Extensions/Player015/Other/SoulGauge",
+            PointX: 1665,
+            PointY: 964
+        },
+        // Player 1
+        {
+            Name: "NoteField",
+            Player: 1,
+            PointX: 498,
+            PointY: 240,
+            Width: 1422,
+            Height: 196,
+            JudgeRelativePointCX: 120,
+            JudgeRelativePointCY: 98,
+        },
+        {
+            Name: "NoteField::Branch",
+            Player: 1,
+        },
+        {
+            Name: "JudgeFrame",
+            FilePath: "NoteField/JudgeFrame.png"
+            Player: 1,
+        },
+        {
+            Name: "NoteField::Gogo",
+            Player: 1,
+        },
+        {
+            Name: "NoteField::Effect",
+            Player: 1,
+        },
+        {
+            Name: "Note::Hit",
+            FolderPath: "Hit"
+            Player: 1,
+        },
+        {
+            Name: "Measure",
+            Player: 1,
+        },
+        {
+        	Name: "Other",
+            Elements: [
+                {
+                    Image: {
+                        FilePath: "Extensions/Player015/AllFrame.png",
+                        PointX: 0,
+                        PointY: 0
+                    }
+                }
+            ]
+        },
+        {
+            Name: "Note",
+            Player: 1,
+            FolderPath: "Note",
+	        NoteText: {
+	            FolderPath: "NoteText",
+	            RelativePointCY: 120
+            }
+        },
+        {
+            Name: "SoulGauge",
+            Player: 1,
+            FolderPath: "Extensions/Player015/P1/SoulGauge",
+            PointX: 1410,
+            PointY: 248
+        },
+        {
+            Name: "Taiko",
+            Player: 1,
+            FolderPath: "Taiko",
+            PointX: 370,
+            PointY: 360,
+        },
+        {
+            Name: "Taiko",
+            Player: 2,
+            FolderPath: "Extensions/Player015/Other/Taiko",
+            PointX: 185,
+            PointY: 60,
+        },
+        {
+            Name: "Taiko",
+            Player: 3,
+            FolderPath: "Extensions/Player015/Other/Taiko",
+            PointX: 1145,
+            PointY: 60,
+        },
+        {
+            Name: "Taiko",
+            Player: 4,
+            FolderPath: "Extensions/Player015/Other/Taiko",
+            PointX: 185,
+            PointY: 180,
+        },
+        {
+            Name: "Taiko",
+            Player: 5,
+            FolderPath: "Extensions/Player015/Other/Taiko",
+            PointX: 1145,
+            PointY: 180,
+        },
+        {
+            Name: "Taiko",
+            Player: 6,
+            FolderPath: "Extensions/Player015/Other/Taiko",
+            PointX: 185,
+            PointY: 540,
+        },
+        {
+            Name: "Taiko",
+            Player: 7,
+            FolderPath: "Extensions/Player015/Other/Taiko",
+            PointX: 1145,
+            PointY: 540,
+        },
+        {
+            Name: "Taiko",
+            Player: 8,
+            FolderPath: "Extensions/Player015/Other/Taiko",
+            PointX: 185,
+            PointY: 660,
+        },
+        {
+            Name: "Taiko",
+            Player: 9,
+            FolderPath: "Extensions/Player015/Other/Taiko",
+            PointX: 1145,
+            PointY: 660,
+        },
+        {
+            Name: "Taiko",
+            Player: 10,
+            FolderPath: "Extensions/Player015/Other/Taiko",
+            PointX: 185,
+            PointY: 780,
+        },
+        {
+            Name: "Taiko",
+            Player: 11,
+            FolderPath: "Extensions/Player015/Other/Taiko",
+            PointX: 1145,
+            PointY: 780,
+        },
+        {
+            Name: "Taiko",
+            Player: 12,
+            FolderPath: "Extensions/Player015/Other/Taiko",
+            PointX: 185,
+            PointY: 900,
+        },
+        {
+            Name: "Taiko",
+            Player: 13,
+            FolderPath: "Extensions/Player015/Other/Taiko",
+            PointX: 1145,
+            PointY: 900,
+        },
+        {
+            Name: "Taiko",
+            Player: 14,
+            FolderPath: "Extensions/Player015/Other/Taiko",
+            PointX: 185,
+            PointY: 1020,
+        },
+        {
+            Name: "Taiko",
+            Player: 15,
+            FolderPath: "Extensions/Player015/Other/Taiko",
+            PointX: 1145,
+            PointY: 1020,
+        },
+        {
+            Name: "JudgeText",
+            Player: 1,
+            FolderPath: "Judge",
+            PointX: 616,
+            PointY: 250
+        },
+        {
+            Name: "JudgeText",
+            Player: 2,
+            FolderPath: "Extensions/Player015/Other/Judge",
+            PointX: 309,
+            PointY: 10
+        },
+        {
+            Name: "JudgeText",
+            Player: 3,
+            FolderPath: "Extensions/Player015/Other/Judge",
+            PointX: 1269,
+            PointY: 10
+        },
+        {
+            Name: "JudgeText",
+            Player: 4,
+            FolderPath: "Extensions/Player015/Other/Judge",
+            PointX: 309,
+            PointY: 130
+        },
+        {
+            Name: "JudgeText",
+            Player: 5,
+            FolderPath: "Extensions/Player015/Other/Judge",
+            PointX: 1269,
+            PointY: 130
+        },
+        {
+            Name: "JudgeText",
+            Player: 6,
+            FolderPath: "Extensions/Player015/Other/Judge",
+            PointX: 309,
+            PointY: 490
+        },
+        {
+            Name: "JudgeText",
+            Player: 7,
+            FolderPath: "Extensions/Player015/Other/Judge",
+            PointX: 1269,
+            PointY: 490
+        },
+        {
+            Name: "JudgeText",
+            Player: 8,
+            FolderPath: "Extensions/Player015/Other/Judge",
+            PointX: 309,
+            PointY: 610
+        },
+        {
+            Name: "JudgeText",
+            Player: 9,
+            FolderPath: "Extensions/Player015/Other/Judge",
+            PointX: 1269,
+            PointY: 610
+        },
+        {
+            Name: "JudgeText",
+            Player: 10,
+            FolderPath: "Extensions/Player015/Other/Judge",
+            PointX: 309,
+            PointY: 730
+        },
+        {
+            Name: "JudgeText",
+            Player: 11,
+            FolderPath: "Extensions/Player015/Other/Judge",
+            PointX: 1269,
+            PointY: 730
+        },
+        {
+            Name: "JudgeText",
+            Player: 12,
+            FolderPath: "Extensions/Player015/Other/Judge",
+            PointX: 309,
+            PointY: 850
+        },
+        {
+            Name: "JudgeText",
+            Player: 13,
+            FolderPath: "Extensions/Player015/Other/Judge",
+            PointX: 1269,
+            PointY: 850
+        },
+        {
+            Name: "JudgeText",
+            Player: 14,
+            FolderPath: "Extensions/Player015/Other/Judge",
+            PointX: 309,
+            PointY: 970
+        },
+        {
+            Name: "JudgeText",
+            Player: 15,
+            FolderPath: "Extensions/Player015/Other/Judge",
+            PointX: 1269,
+            PointY: 970
+        },
+        {
+            Name: "ComboNumber",
+            Player: 1,
+            FolderPath: "ComboNumber/Red",
+            PointX: 365, 
+            PointY: 292,
+            Chip: {
+                Width: 47,
+            },
+            Animation: {
+            	DuringTime: 200,
+            	StartExRateY: 1.1,
+            }
+        },
+        {
+            Name: "ComboNumber",
+            Player: 2,
+            FolderPath: "Extensions/Player015/Other/ComboNumber/Gray",
+            PointX: 365, 
+            PointY: 292,
+            Chip: {
+                Width: 24,
+            },
+            Animation: {
+            	DuringTime: 200,
+            	StartExRateY: 1.1,
+            }
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 1,
+        	X: 218,
+        	Y: 273,
+            FolderPath: "ScoreNumber",
+            Chip: {
+                Width: 30,
+                Height: 60,
+            }
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 2,
+        	X: 109,
+        	Y: 16,
+            FolderPath: "Extensions/Player015/Other/ScoreNumber",
+            Chip: {
+                Width: 15,
+                Height: 30,
+            }
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 3,
+        	X: 1069,
+        	Y: 16,
+            FolderPath: "Extensions/Player015/Other/ScoreNumber",
+            Chip: {
+                Width: 15,
+                Height: 30,
+            }
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 4,
+        	X: 109,
+        	Y: 136,
+            FolderPath: "Extensions/Player015/Other/ScoreNumber",
+            Chip: {
+                Width: 15,
+                Height: 30,
+            }
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 5,
+        	X: 1069,
+        	Y: 136,
+            FolderPath: "Extensions/Player015/Other/ScoreNumber",
+            Chip: {
+                Width: 15,
+                Height: 30,
+            }
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 6,
+        	X: 109,
+        	Y: 496,
+            FolderPath: "Extensions/Player015/Other/ScoreNumber",
+            Chip: {
+                Width: 15,
+                Height: 30,
+            }
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 7,
+        	X: 1069,
+        	Y: 496,
+            FolderPath: "Extensions/Player015/Other/ScoreNumber",
+            Chip: {
+                Width: 15,
+                Height: 30,
+            }
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 8,
+        	X: 109,
+        	Y: 616,
+            FolderPath: "Extensions/Player015/Other/ScoreNumber",
+            Chip: {
+                Width: 15,
+                Height: 30,
+            }
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 9,
+        	X: 1069,
+        	Y: 616,
+            FolderPath: "Extensions/Player015/Other/ScoreNumber",
+            Chip: {
+                Width: 15,
+                Height: 30,
+            }
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 10,
+        	X: 109,
+        	Y: 736,
+            FolderPath: "Extensions/Player015/Other/ScoreNumber",
+            Chip: {
+                Width: 15,
+                Height: 30,
+            }
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 11,
+        	X: 1069,
+        	Y: 736,
+            FolderPath: "Extensions/Player015/Other/ScoreNumber",
+            Chip: {
+                Width: 15,
+                Height: 30,
+            }
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 12,
+        	X: 109,
+        	Y: 856,
+            FolderPath: "Extensions/Player015/Other/ScoreNumber",
+            Chip: {
+                Width: 15,
+                Height: 30,
+            }
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 13,
+        	X: 1069,
+        	Y: 856,
+            FolderPath: "Extensions/Player015/Other/ScoreNumber",
+            Chip: {
+                Width: 15,
+                Height: 30,
+            }
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 14,
+        	X: 109,
+        	Y: 976,
+            FolderPath: "Extensions/Player015/Other/ScoreNumber",
+            Chip: {
+                Width: 15,
+                Height: 30,
+            }
+        },
+        {
+        	Name: "ScoreNumber"
+            Player: 15,
+        	X: 1069,
+        	Y: 976,
+            FolderPath: "Extensions/Player015/Other/ScoreNumber",
+            Chip: {
+                Width: 15,
+                Height: 30,
+            }
+        },
+        {
+        	Name: "Title",
+        	FontSize: 24,
+        	Pivot: "RightMiddle",
+        	PointX: 490,
+        	PointY: 473,
+        }
+    ],
+}

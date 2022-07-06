@@ -1,0 +1,215 @@
+{
+	Elements: [
+		{
+			// キー設定
+			// プレイヤー毎にキー割り当てを変更できます。
+			Name: "KeyConfig",
+			Players: [
+				{
+					// プレイヤー番号
+					// プレイヤー1の情報を設定します。
+					Number: 1,
+					// 選曲項目時のキー設定
+					// - OK: 決定キ－
+					// - Prev: 1つ前の項目に移動するキー
+					// - Next: 1つ次の項目に移動するキー
+					// - Cancel: キャンセルキー
+					// - Edit: 編集モードに移行するキー 
+					SelectItem: {					
+						OK: ["F", "J", "Enter", "Space"],
+						Prev: ["Left", "D", "Up"],
+						Next: ["Right", "K", "Down"],
+						Cancel: ["Q"],
+						Edit: ["E"],
+					},
+				},
+				{
+					Number: 2,
+					SelectItem: {					
+						OK: ["V","M"],
+						Prev: ["C"],
+						Next: ["<"],
+						Cancel: []
+					},
+				}
+			],
+		},
+		{
+			// 選曲時のデモ再生設定
+			Name: "Demo",
+			// デフォルト時の設定
+			Default: {
+				// 譜面を選択していないときの音源
+				BGMFilePath: "../Sound/Default/SongSelect/BGM.ogg",
+				// 音量(0 to 100)
+				Volume: 80
+			}
+		},
+		{
+			// 効果音設定
+			Name: "SoundEffect",
+			// 決定キー押下時
+			OK: {
+				FilePath: "../Sound/Default/OK.wav",
+			},
+			// 移動キー押下時
+			Move: {
+				FilePath: "../Sound/Default/Move.wav",
+			},
+			// キャンセルキー押下時
+			Cancel: {
+				FilePath: "../Sound/Default/Cancel.wav",
+			},
+		},
+		{
+			// 背景描画設定
+			Name: "Background",			
+			// フォルダー ※未使用
+			FolderPath: "Background/Default",
+			// 背景のループ移動速度 (1秒で進むピクセル数)
+			Move: {
+				X: -60,
+				Y: 0,
+			}
+		}
+		{
+			// 選択項目描画設定
+			Name: "SelectItem",
+			A: {
+				FontSize: 40,
+				FontName: "{{ Default }}"
+			}
+			ImageInfo: [
+				{
+					FileName: "ItemBackground01.png",
+					SplitOption: {
+						Width: 940,
+						Height: 130,
+						SplitWidth: [
+							"{{ Width }}"
+						],
+						SplitHeight: [
+							"48",
+							"{{ Height }} - 48 * 2",
+							"48"
+						],
+					}
+				},
+				{
+					FileName: "ItemBackground02.png"
+					SplitOption: {
+						Width: 940,
+						Height: 130,
+						SplitWidth: [
+							"{{ Width }}"
+						],
+						SplitHeight: [
+							"48",
+							"{{ Height }} - 48 * 2",
+							"48"
+						],
+					}
+				},
+			],
+			// もどる項目ボタンの間隔
+			BackItem: {
+				DuringCount: 6,
+			},
+			Center: {
+				Point: {
+					CX: "{{ ScreenWidthHalf }}",
+					CY: "{{ ScreenHeightHalf }}",
+				}
+				Width: 940,
+				Height: 316,
+			},
+			Next: {
+				Num: 5,
+				Point: {
+					CX: "{{ ScreenWidthHalf }} + 50 + 50 * {{ Index }}",
+					CY: "{{ ScreenHeightHalf }} + {{ CurrentlySelectedHeight }} / 2 + 92 + 144 * {{ Index }}",
+				},
+				Width: 940,
+				Height: 130,
+			}
+			Prev: {
+				Num: 5,
+				Point: {
+					CX: "{{ ScreenWidthHalf }} - 50 - 50 * {{ Index }}",
+					CY: "{{ ScreenHeightHalf }} - {{ CurrentlySelectedHeight }} / 2 - 92 - 144 * {{ Index }}",
+				},
+				Width: 940,
+				Height: 130,
+			}
+			Animation: {
+				ScoreMove: [
+					{
+						Action: "KeyInput",
+						Type: ["Move"]
+						Enabled: false,
+					},
+					{
+						Action: "CenterSize",
+						Height: 130,
+						Easing: "SinIn",
+						During: 1000,					
+					},
+					{
+						Action: "ItemMove",
+						Easing: "SinIn",
+						During: 1000,
+					},
+					{
+						Action: "ItemRefresh",
+					},
+					{
+						Action: "CenterSize",
+						Height: 316,
+						Easing: "SinIn",
+						During: 1000,	
+					},
+					{
+						Action: "KeyInput",
+						Type: ["Move"]
+						Enabled: true,
+					},
+				],
+				ScoreOpen: [
+					{
+						Property: "MasterHeight",
+						Arguments: [
+							
+						],
+						Value: 316,
+						During: 1000,
+						Easing: "none",
+					}
+				],
+				ScoreClose: [
+					{
+						Property: "MasterHeight",
+						Value: 130,
+						Easing: "none",
+					}
+				]
+			}
+		},
+		{
+			Name: "CourseSelectCursor",
+			FolderPath: "CourseSelectCursor"
+			Players: [
+				{
+					Number: 1,
+					Side: "Left",
+					FrameImageFilePath: "CursorFrame/Red.png",
+					NumberImageFilePath: "Player/1.png",
+				},
+				{
+					Number: 2,
+					FrameImageFilePath: "CursorFrame/Blue.png",
+					NumberImageFilePath: "Player/2.png",
+				},
+			]
+		}
+	],
+}

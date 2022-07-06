@@ -1,0 +1,49 @@
+{
+	StartNum: 3,
+    Elements: [
+        {
+            Path: "./Metronome.png",
+            ScaleRate: 20.0,
+            ItemSplit: {
+                Count: 8,
+                Width: 31,
+                Height: 16,
+                XNum: 1,
+                YNum: 8
+            }
+        },
+        {
+            Path: "./Metronome_green.png",
+            ScaleRate: 20.0,
+            ItemSplit: {
+                Count: 8,
+                Width: 31,
+                Height: 16,
+                XNum: 1,
+                YNum: 8
+            }
+        },
+        {
+            Path: "./Metronome_green2.png",
+            ScaleRate: 20.0,
+            ItemSplit: {
+                Count: 8,
+                Width: 31,
+                Height: 16,
+                XNum: 1,
+                YNum: 8
+            }
+        },
+        {
+            Path: "./Metronome_red.png",
+            ScaleRate: 20.0,
+            ItemSplit: {
+                Count: 8,
+                Width: 31,
+                Height: 16,
+                XNum: 1,
+                YNum: 8
+            }
+        },
+    ]
+}

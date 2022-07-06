@@ -1,0 +1,8 @@
+{
+	Elements: [
+		{
+			Type: "Image",
+			FilePath: "Stage.png"
+		},
+	],
+}
